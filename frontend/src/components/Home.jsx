@@ -3,6 +3,36 @@ import './Home.css';
 import Typing from './Typing';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import esgimage from '../assets/esg.png'
+import unihubimage from '../assets/unihub.png'
+import cbimage from '../assets/cb.png'
+import cbchatbotimage from '../assets/cbchatbot.png'
+const projects = [
+  {
+    title: 'ESGGuardian',
+    description: 'A blockchain-powered platform to validate ESG agreements with AI.',
+    image: esgimage,
+    link: 'https://github.com/vanshsrivastava49/ESGGuardian',
+  },
+  {
+    title: 'UniHub',
+    description: 'A college specific social media platform with chats, posts, and communities.',
+    image: unihubimage,
+    link: 'https://github.com/vanshsrivastava49/UniHub',
+  },
+  {
+    title: 'CampusBuzz',
+    description: 'A platform for college students to discover clubs and events of SRM Institute of Science and Technology.',
+    image: cbimage,
+    link: 'https://campusbuzz.vercel.app/',
+  },
+  {
+    title: 'CampusBuzz Bot',
+    description: 'A college info chatbot using LangChain and RAG model for student queries.',
+    image: cbchatbotimage,
+    link: 'https://campusbuzz-chatbot-bp19.onrender.com/',
+  },
+];
 const Home = () => {
   return (
     <div className="app">
@@ -12,7 +42,7 @@ const Home = () => {
          <li><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="/Work">Work</a></li>
+          <li><a href="#work">Work</a></li>
         </ul>
         <div className="social-links">
           <a href="https://twitter.com/Vansh_49" target="_blank" rel="noopener noreferrer">
@@ -59,6 +89,21 @@ const Home = () => {
           Always eager to learn and grow in the tech community.
         </p>
       </div>
+      <div className="work-container" id="work">
+      <h2 className="work-title">My Projects</h2>
+      <div className="project-grid">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img src={project.image} alt={project.title} className="project-icon" />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="learn-more-btn">
+              Learn More
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
     </div>
   );
 };
