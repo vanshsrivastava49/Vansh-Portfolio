@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Typing = () => {
-  const titles = ['Full Stack Developer', 'AI ML Expert'];
+  const titles = ['Full Stack Developer', 'AI/ML Developer'];
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
