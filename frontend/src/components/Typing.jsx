@@ -9,7 +9,7 @@ const Typing = () => {
 
   useEffect(() => {
     const current = titles[index];
-    const speed = deleting ? 50 : 100;
+    const speed = deleting ? 60 : 100;
 
     const timer = setTimeout(() => {
       if (!deleting && charIndex < current.length) {
