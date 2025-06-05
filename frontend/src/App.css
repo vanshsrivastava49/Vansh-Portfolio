@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+ font-family: "Edu NSW ACT Hand Pre", cursive;
+ font-optical-sizing: auto;
+  background-color: #fffcd4;
+  min-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app {
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 18px;
+  color: #0a065d;
+  padding-left: 10px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 14px;
+  color: #0a065d;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li{
+  cursor:pointer;
+}
+.nav-links li:hover{
+  color:#00000030;
+  transition: color 0.2s ease-in-out;
+}
+.socials span {
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  color: #0a065d;
+  padding: 20px;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.resume-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #fef68b;
+  border: none;
+  box-shadow: 2px 2px #cfcf00;
+  border-radius: 6px;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+ font-optical-sizing: auto;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  left:100px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 4px solid #00000030;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decoration {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  color: #4f3d00;
+  font-size: 24px;
+  font-weight: bold;
+}
+.typing-heading {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0a065d;
+  margin: 10px 0;
+  line-height: 1.2;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 500;
+  font-size: 48px;
+  color: #0a065d;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.social-icons{
+  color:black;
+  padding: 8px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.social-icons:hover{
+  color:#00000030;
+  transition:color 0.2s ease-in-out;
+}
